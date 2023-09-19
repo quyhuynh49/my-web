@@ -23,3 +23,16 @@ sr.reveal(".main-btn", { delay: 860, origin: "left" });
 
 sr.reveal(".share", { delay: 950, origin: "bottom" });
 sr.reveal(".home-img", { delay: 1000, origin: "right" });
+
+/* dark/light theme */
+
+const iconTheme = document.getElementById("icon-theme");
+
+iconTheme.onclick = function () {
+  document.body.classList.toggle("light-theme");
+  if (document.body.classList.contains("light-theme")) {
+    iconTheme.src = "img/icon/moon.png";
+  } else {
+    iconTheme.src = "img/icon/sun.png";
+  }
+};
